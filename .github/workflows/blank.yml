@@ -1,8 +1,8 @@
-name: CI
-on: [push]
+name: tmate-ci
+on: workflow_dispatch
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: buildjet-4vcpu-ubuntu-2204
     steps:
     - uses: actions/checkout@v3
     - name: Setup tmate session
